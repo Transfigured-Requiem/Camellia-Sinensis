@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 507.99998 285.74999"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="first_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#20222a"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#3e3e3e"
+     inkscape:document-units="px"
+     inkscape:zoom="0.3429784"
+     inkscape:cx="969.44882"
+     inkscape:cy="113.70979"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10"
+     showguides="true">
+    <sodipodi:guide
+       position="287.95981,131.32503"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch9"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#171717;stop-opacity:1;"
+         offset="0"
+         id="stop10" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g10">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28.5537px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Bold';letter-spacing:0.858103px;fill:#f9f9f9;stroke:none;stroke-width:0.386821;stroke-dasharray:none;stroke-opacity:1"
+         x="289.21603"
+         y="154.42496"
+         id="text1-8"
+         inkscape:label="Right"><tspan
+           sodipodi:role="line"
+           id="tspan1-6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28.5537px;font-family:Poppins;-inkscape-font-specification:'Poppins Bold';fill:#f9f9f9;stroke:none;stroke-width:0.386821;stroke-dasharray:none;stroke-opacity:1"
+           x="289.21603"
+           y="154.42496">Right</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:50.8px;line-height:1.25;font-family:sans-serif;letter-spacing:1.52665px;display:inline;fill:#ffffff;stroke-width:0.264583"
+         x="130.56273"
+         y="154.42496"
+         id="text1"
+         inkscape:label="Brand"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:50.8px;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';fill:#ffffff;stroke-width:0.264583"
+           x="130.56273"
+           y="154.42496">Brand</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.2778px;line-height:1.25;font-family:'Athletic Outfit';-inkscape-font-specification:'Athletic Outfit';letter-spacing:0.47625px;stroke-width:0.264583"
+         x="291.89944"
+         y="130.45804"
+         id="text2"
+         sodipodi:insensitive="true"
+         inkscape:label="it"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.2778px;font-family:'Athletic Outfit';-inkscape-font-specification:'Athletic Outfit';letter-spacing:0.47625px;fill:#20cafd;fill-opacity:1;stroke-width:0.264583"
+           x="291.89944"
+           y="130.45804">it</tspan></text>
+    </g>
+  </g>
+</svg>

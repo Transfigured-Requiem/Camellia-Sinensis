@@ -1,0 +1,92 @@
+export const Tweets = [
+	{
+		text: "@supabase is just 🤯 Now I see why a lot of people love using it as a backend for their applications. I am really impressed with how easy it is to set up an Auth and then just code it together for the frontend. @IngoKpp now I see your joy with Supabase #coding #fullstackwebdev",
+		url: "https://twitter.com/IxoyeDesign/status/1497473731777728512",
+		handle: "IxoyeDesign",
+		img_url: "images/twitter-profiles/C8opIL-g_400x400.jpg",
+	},
+	{
+		text: "I've been using @supabase for two personal projects and it has been amazing being able to use the power of Postgres and don't have to worry about the backend",
+		url: "https://twitter.com/varlenneto/status/1496595780475535366",
+		handle: "varlenneto",
+		img_url: "images/twitter-profiles/wkXN0t_F_400x400.jpg",
+	},
+	{
+		text: "Y'all @supabase + @nextjs is amazing! 🙌 Barely an hour into a proof-of-concept and already have most of the functionality in place. 🤯🤯🤯",
+		url: "https://twitter.com/justinjunodev/status/1500264302749622273",
+		handle: "justinjunodev",
+		img_url: "images/twitter-profiles/9k_ZB9OO_400x400.jpg",
+	},
+	{
+		text: "And thanks to @supabase, I was able to go from idea to launched feature in a matter of hours. Absolutely amazing!",
+		url: "https://twitter.com/BraydonCoyer/status/1511071369731137537",
+		handle: "BraydonCoyer",
+		img_url: "images/twitter-profiles/8YxkpW8f_400x400.jpg",
+	},
+	{
+		text: "Contributing to open-source projects and seeing merged PRs gives enormous happiness! Special thanks to @supabase, for giving this opportunity by staying open-source and being junior-friendly✌🏼",
+		url: "https://twitter.com/damlakoksal/status/1511436907984662539",
+		handle: "damlakoksal",
+		img_url: "images/twitter-profiles/N8EfTFs7_400x400.jpg",
+	},
+	{
+		text: "Holy crap. @supabase is absolutely incredible. Most elegant backend as a service I've ever used. This is a dream.",
+		url: "https://twitter.com/kentherogers/status/1512609587110719488",
+		handle: "KenTheRogers",
+		img_url: "images/twitter-profiles/9l9Td-Fz_400x400.jpg",
+	},
+	{
+		text: "Over the course of a few weeks, we migrated 125.000 users (email/pw, Gmail, Facebook, Apple logins) from Auth0 to @supabase and have now completed the migration. I'm just glad the migration is done 😅 Went well, besides a few edge cases (duplicate emails/linked accounts)",
+		url: "https://twitter.com/kevcodez/status/1518548401587204096",
+		handle: "kevcodez",
+		img_url: "images/twitter-profiles/t6lpcRcn_400x400.jpg",
+	},
+	{
+		text: "Using @supabase I'm really pleased on the power of postgres (and sql in general). Despite being a bit dubious about the whole backend as a service thing I have to say I really don't miss anything. The whole experience feel very robust and secure.",
+		url: "https://twitter.com/paoloricciuti/status/1497691838597066752",
+		handle: "PaoloRicciuti",
+		img_url: "images/twitter-profiles/OCDKFUOp_400x400.jpg",
+	},
+	{
+		text: "@supabase is lit. It took me less than 10 minutes to setup, the DX is just amazing.",
+		url: "https://twitter.com/saxxone/status/1500812171063828486",
+		handle: "saxxone",
+		img_url: "images/twitter-profiles/BXi6z1M7_400x400.jpg",
+	},
+	{
+		text: "I’m not sure what magic @supabase is using but we’ve migrated @happyteamsdotio database to @supabase from @heroku and it’s much much faster at half the cost.",
+		url: "https://twitter.com/michaelcdever/status/1524753565599690754",
+		handle: "michaelcdever",
+		img_url: "images/twitter-profiles/rWX8Jzp5_400x400.jpg",
+	},
+	{
+		text: "There are a lot of indie hackers building in public, but it’s rare to see a startup shipping as consistently and transparently as Supabase. Their upcoming March releases look to be 🔥 Def worth a follow! also opened my eyes as to how to value add in open source.",
+		url: "https://twitter.com/swyx/status/1366685025047994373",
+		handle: "swyx",
+		img_url: "images/twitter-profiles/qhvO9V6x_400x400.jpg",
+	},
+	{
+		text: "This weekend I made a personal record 🥇 on the less time spent creating an application with social login / permissions, database, cdn, infinite scaling, git push to deploy and for free. Thanks to @supabase and @vercel",
+		url: "https://twitter.com/jperelli/status/1366195769657720834",
+		handle: "jperelli",
+		img_url: "images/twitter-profiles/_ki30kYo_400x400.jpg",
+	},
+	{
+		text: "Badass! Supabase is amazing. literally saves our small team a whole engineer’s worth of work constantly. The founders and everyone I’ve chatted with at supabase are just awesome people as well :)",
+		url: "https://twitter.com/KennethCassel/status/1524359528619384834",
+		handle: "KennethCassel",
+		img_url: "images/twitter-profiles/pmQj3TX-_400x400.jpg",
+	},
+	{
+		text: "Working with Supabase is just fun. It makes working with a DB so much easier.",
+		url: "https://twitter.com/the_BrianB/status/1524716498442276864",
+		handle: "the_BrianB",
+		img_url: "images/twitter-profiles/7NITI8Z3_400x400.jpg",
+	},
+	{
+		text: "This community is STRONG and will continue to be the reason why developers flock to @supabase over an alternative. Keep up the good work! ⚡️",
+		url: "https://twitter.com/_wilhelm__/status/1524074865107488769",
+		handle: "_wilhelm__",
+		img_url: "images/twitter-profiles/CvqDy6YF_400x400.jpg",
+	},
+]
