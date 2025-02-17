@@ -5,7 +5,12 @@ import { DM_Serif_Text, Inter } from "next/font/google"
 import localFont from "next/font/local"
 
 import { ThemeProvider } from "@/providers/theme-provider"
-import HeaderMenu from "@/components/Main/Header/Header"
+import HeaderMenu from "@/components/HeaderAwwwards/Header"
+import KPRSideMenu from "@/components/Header/KPRSideMenu"
+import Header from "@/components/SideMenu/Header"
+import Footer from "@/components/Main/Footer/Footer"
+import TimelineNavbar from "@/components/Main/Navbar/TimelineNavbar"
+// import Button from "@/components/SideMenu/Button"
 
 // Google Fonts
 const dmSans = Inter({
@@ -58,6 +63,23 @@ const yuji = localFont({
 	display: "swap",
 })
 
+const clash = localFont({
+	src: "../../public/fonts/ClashGrotesk-Variable.ttf",
+	variable: "--font-clash",
+	display: "swap",
+})
+
+const whyte = localFont({
+	src: "../../public/fonts/ABCWhyteInktrapVariable-Trial.ttf",
+	variable: "--font-whyte",
+	display: "swap",
+})
+
+const dirty = localFont({
+	src: "../../public/fonts/Dirtyline36Daysoftype2022-Reg.ttf",
+	variable: "--font-dirty",
+	display: "swap",
+})
 // Meta data
 export const metadata: Metadata = {
 	title: "Taha Edits",
@@ -75,7 +97,7 @@ export default function RootLayout({
 				<link rel="icon" href="/favicon.ico" sizes="any" />
 			</head>
 			<body
-				className={`${dmSans.variable} ${dmSerif.variable} ${yuji.variable} ${chillax.variable} ${stardom.variable} ${kola.variable} ${rx100.variable} ${aktura.variable}`}
+				className={`${dmSans.variable} ${dmSerif.variable} ${yuji.variable} ${chillax.variable} ${stardom.variable} ${kola.variable} ${rx100.variable} ${aktura.variable} ${clash.variable} ${whyte.variable} ${dirty.variable}`}
 			>
 				<ThemeProvider
 					attribute="class"
@@ -84,8 +106,14 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					{/* <Nav /> */}
-					<HeaderMenu />
+					{/* <div className="absolute"></div> */}
+					{/* <TimelineNavbar /> */}
+
+					{/* <HeaderMenu /> */}
+					{/* <Header /> */}
+					{/* <KPRSideMenu /> */}
 					{children}
+					<Footer />
 
 					{/* <SiteFooter /> */}
 				</ThemeProvider>

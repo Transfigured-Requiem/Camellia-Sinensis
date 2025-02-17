@@ -4,7 +4,7 @@ import { Particles } from "./Particles"
 import { ArrowRight, Check } from "lucide-react"
 import { useCallback, useId, useMemo } from "react"
 import { cn } from "@/lib/utils"
-import HeadingCentered from "../../shared/HeadingCentered"
+import HeadingCentered from "../../../shared/HeadingCentered"
 import { PricingGrids } from "./GlowingGrids"
 
 const tiers = [

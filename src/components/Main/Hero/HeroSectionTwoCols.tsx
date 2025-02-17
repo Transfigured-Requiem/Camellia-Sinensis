@@ -28,7 +28,7 @@ function HeroSectionTwoCols() {
 								</h2> */}
 								{/* <div className={dmserif.className}> */}
 								<h1
-									className="font-stardom bg-gradient-to-t from-zinc-700/35 from-[2%] via-foreground to-zinc-400 to-[98%] bg-clip-text pt-4 text-5xl font-semibold text-transparent lg:text-7xl"
+									className="font-whyte bg-gradient-to-t from-zinc-700/35 from-[2%] via-foreground to-zinc-400 to-[98%] bg-clip-text pt-4 text-5xl font-semibold text-transparent lg:text-7xl"
 									// style={{ animationDelay: "0.60s", animationFillMode: "both" }}
 								>
 									Professional Video Editor{" "}
@@ -36,10 +36,10 @@ function HeroSectionTwoCols() {
 										<span className="font-chillax z-10 bg-gradient-to-br from-[#e6195a] from-[50%] to-[#5210f9] bg-clip-text">
 											algorithm
 										</span>
-
+										{/* 
 										<span className="-z-10 opacity-45">
 											<UnderlineSVG />
-										</span>
+										</span> */}
 									</span>{" "}
 									game
 								</h1>

@@ -1,0 +1,274 @@
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: "Akkurat Mono";
+	background: #fff;
+} */
+
+.container a,
+.container p,
+.container span {
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 100%;
+	cursor: pointer;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em;
+	z-index: 2;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.menuContainer {
+	position: fixed;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-50%);
+	padding: 1.5em;
+	width: 45%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	transition: left 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menu {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	color: #fff;
+	border-radius: 20px;
+	display: flex;
+	overflow: hidden;
+}
+
+.menuMain {
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-right: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.menuSidebar {
+	flex: 0.2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.menuMain .menuTop {
+	display: flex;
+	border-top: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.menuMain .menuBottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.menuTopTitle {
+	flex: 1;
+	padding: 2em;
+	padding-right: 9em;
+}
+
+.menuTopContent {
+	padding: 1.25em 0;
+	flex: 4;
+	display: flex;
+	flex-direction: column;
+}
+
+.menuItem {
+	position: relative;
+	left: -100px;
+	padding: 0.5em 0;
+	transition: left 0.3s;
+}
+
+.menuItemLink {
+	position: relative;
+}
+
+/* Craziest discovery about NextJS Link Tag!!! */
+.menuItemLink a {
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	font-size: 64px;
+	font-family: var(--font-clash);
+	letter-spacing: -2px;
+	font-weight: 700; /*bold*/
+	padding-left: 10px;
+	z-index: 2;
+}
+
+.menuItem#active .menuItemLink a {
+	color: #ff2b2b;
+}
+
+.menuItem:hover .menuItemLink a {
+	color: hsl(51, 100%, 50%);
+	/* background-color: #ff2b2b; */
+}
+
+.bgHover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #fff;
+	clip-path: polygon(0 0, 100% 80%, 95% 100%, 0 100%, 0 50%);
+	z-index: 100;
+	opacity: 0;
+}
+
+.menuItem:hover .bgHover {
+	opacity: 1;
+}
+
+.menuItem#active .bgHover {
+	background-color: aquamarine;
+	opacity: 1;
+}
+
+.menuItem span {
+	position: absolute;
+	top: 0px;
+	padding: 1.5em 0;
+}
+
+.menuItem span .word .char {
+	color: #000;
+}
+
+.menuItem#active span .word .char {
+	color: #fff;
+}
+
+.menuItem:hover span .word .char.char-active {
+	color: #fff;
+}
+
+.menuItem span .word .char.char-active {
+	color: #000;
+}
+
+.menuSubItem {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	border-top: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 1em 2em;
+}
+
+.menuTitle {
+	flex: 1;
+}
+
+.menuContent {
+	flex: 4;
+	display: flex; /* Add this */
+	flex-direction: column; /* Ensure this is set */
+	gap: 1em; /* Add spacing between items */
+	padding-left: 2em;
+}
+
+.menuContent p {
+	position: relative;
+	width: max-content;
+	padding: 0.125em;
+}
+
+.menuContent p::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #fff;
+	mix-blend-mode: difference;
+}
+
+@keyframes hoverEffect {
+	0%,
+	100% {
+		width: 0%;
+		left: 0;
+	}
+
+	50% {
+		width: 100%;
+		left: 0;
+	}
+
+	51% {
+		left: auto;
+		right: 0;
+		width: 100%;
+	}
+
+	100% {
+		left: auto;
+		right: 0;
+		width: 0%;
+	}
+}
+
+.menuContent p:hover::after {
+	animation: hoverEffect 1s ease forwards;
+}
+
+.closeBtn,
+.logo {
+	padding: 1.5em;
+}
+
+.closeBtn {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+	cursor: pointer;
+}
+
+@media (max-width: 900px) {
+	.menuContainer {
+		width: 100%;
+	}
+
+	.menuTopContent {
+		padding: 1.5em;
+	}
+
+	.menuTopTitle,
+	.menuItem span,
+	.menuTitle {
+		display: none;
+	}
+
+	.menuItem:hove .menuItemLink a {
+		color: #fff;
+	}
+}

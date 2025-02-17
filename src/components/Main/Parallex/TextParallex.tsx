@@ -101,7 +101,7 @@ const Slide = ({ src, role, left, direction, progress }) => {
 
 const Phrase = ({ src, role }) => {
 	return (
-		<div className="font-rx100 flex items-center gap-5 px-5 font-semibold">
+		<div className="font-whyte flex items-center gap-5 px-5 font-semibold uppercase">
 			<p className="text-[7.5vw]">{role}</p>
 			<span className="relative aspect-[4/2] h-[7.5vw] overflow-hidden rounded-full">
 				<Image style={{ objectFit: "cover" }} src={src} alt="image" fill />

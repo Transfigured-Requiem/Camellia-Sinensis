@@ -27,8 +27,8 @@ export const menu = {
 			url: "/#tweets",
 		},
 		{
-			title: "Pricing",
-			url: "/pricing",
+			title: "About",
+			url: "/About",
 		},
 		{ title: "FAQ", url: "/#faq" },
 		// {

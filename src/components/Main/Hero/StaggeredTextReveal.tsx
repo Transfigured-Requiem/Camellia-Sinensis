@@ -91,6 +91,8 @@ const StaggeredTextReveal = ({
 						style={{
 							display: "inline-block",
 							transformOrigin: "center bottom",
+							opacity: startAnimation ? 1 : 0, // Hide initially
+							y: startAnimation ? "0%" : "30%", // Start below the baseline
 						}}
 					>
 						{char === " " ? "\u00A0" : char}
@@ -114,6 +116,8 @@ const StaggeredTextReveal = ({
 						...child.props.style,
 						display: "inline-block",
 						transformOrigin: "center bottom",
+						opacity: startAnimation ? 1 : 0, // Hide initially
+						y: startAnimation ? "0%" : "30%", // Start below the baseline
 					},
 				})}
 			</span>
@@ -126,6 +130,7 @@ const StaggeredTextReveal = ({
 			style={{
 				display: "inline-block",
 				transformOrigin: "center",
+				opacity: startAnimation ? 1 : 0, // Hide initially
 			}}
 		>
 			{React.Children.map(children, (child, index) =>

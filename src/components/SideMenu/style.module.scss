@@ -1,0 +1,17 @@
+$brand-red-2: #fe2727;
+$brand: hsl(51, 100%, 50%);
+.header {
+	position: fixed;
+	left: 30px;
+	top: 2em;
+	z-index: 20;
+	.menu {
+		width: 480px;
+		height: 650px;
+		// background-color: $brand-red-2;
+		background-color: hsla(0, 0%, 0%, 0.9);
+		position: relative;
+		border: 2px solid $brand-red-2;
+		border-radius: 25px;
+	}
+}

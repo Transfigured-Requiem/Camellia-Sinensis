@@ -95,9 +95,9 @@ function KPRHome() {
 
 			{/* Main content area */}
 			<div className="col-span-1 row-span-1 flex justify-between border-l border-t border-gray-700 dark:border-zinc-100/20">
-				<div className="">
+				{/* <div className="">
 					<AboutDisperse />
-				</div>
+				</div> */}
 				<div className="font-aktura relative bottom-0 right-0 mr-4 mt-auto w-full text-right text-[20rem] font-semibold text-foreground dark:text-amber-50">
 					<div className="">
 						<StaggeredTextReveal

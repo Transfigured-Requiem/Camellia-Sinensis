@@ -40,25 +40,21 @@ export default function Home() {
 	}
 
 	return (
-		<main className="flex h-[20vh] overflow-hidden border-y-4 border-dashed border-zinc-100/20">
+		<main className="flex h-[10vh] items-center justify-center overflow-hidden border-y-4 border-dashed border-brand">
 			{/* <Image src="/images/background.jpg" fill={true} alt="background" /> */}
 
-			<div className="my-auto flex items-center justify-center">
+			<div className="my-auto gap-0 text-brand">
 				<div
 					ref={slider}
-					className="slider font-inter my-auto text-7xl font-bold"
+					className="slider font-inter my-auto text-4xl font-bold opacity-10"
 				>
-					<p
-						ref={firstText}
-						className="opacity-10 transition-colors duration-500 hover:text-brand-red hover:opacity-100"
-					>
-						Taha - タハ - ⵟⴰⵀⴰ - 타하 - Τάχα - Таха - 塔哈 -
+					<p ref={firstText} className="">
+						Taha - タハ - ⵟⴰⵀⴰ - 타하 - Τάχα - Таха - 塔哈 - Taha - タハ - ⵟⴰⵀⴰ
+						- 타하 - Τάχα - Таха - 塔哈 -
 					</p>
-					<p
-						ref={secondText}
-						className="opacity-10 transition-colors duration-500 hover:text-brand hover:opacity-100"
-					>
-						Taha - タハ - ⵟⴰⵀⴰ - 타하 - Τάχα - Таха - 塔哈 -
+					<p ref={secondText}>
+						Taha - タハ - ⵟⴰⵀⴰ - 타하 - Τάχα - Таха - 塔哈 - Taha - タハ - ⵟⴰⵀⴰ
+						- 타하 - Τάχα - Таха - 塔哈 -
 					</p>
 				</div>
 			</div>

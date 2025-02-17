@@ -2,7 +2,7 @@ import Image from "next/image"
 import React from "react"
 import MaxWidthWrapper from "../../../../shared/rules/MaxWidthWrapper"
 import HeadingCentered from "../../../../shared/HeadingCentered"
-import { HighlighterItem } from "../../../Pricing/Highlighter"
+import { HighlighterItem } from "../../../ToDelete/Pricing/Highlighter"
 function BentoGrid() {
 	return (
 		<MaxWidthWrapper className="mb-48">

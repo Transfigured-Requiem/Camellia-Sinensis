@@ -1,0 +1,78 @@
+$brand: hsl(51, 100%, 50%);
+$brand-red-2: #ff1515;
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0px 0px 0px 0px;
+	height: 100%;
+	box-sizing: border-box;
+
+	.body {
+		display: flex;
+		gap: 0px;
+		flex-direction: column;
+		border: #ff1515 4px dashed;
+
+		.linkContainer {
+			perspective: 200px;
+			perspective-origin: bottom;
+			position: relative; // Ensure this is relative to contain the pseudo-element
+
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 48px;
+				font-weight: 700;
+				font-family: var(--font-whyte);
+				text-transform: uppercase;
+				position: relative; // Ensure this is relative to position the pseudo-element
+				display: inline-block; // Ensure the anchor wraps the text tightly
+				padding-left: 5px;
+
+				// Pseudo-element for the hover effect
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					// max-width: 300px;
+					min-width: 310px; // Set width to 110% of the parent container
+					background: $brand-red-2;
+					padding-right: 40px;
+					border-radius: 5px;
+					clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 98%, 0% 50%);
+					z-index: -1; // Place it behind the text
+					opacity: 0; // Hide by default
+					transition: opacity 0.3s ease; // Smooth transition for hover effect
+				}
+
+				// Apply the hover effect to the pseudo-element and change text color
+				&:hover::before {
+					opacity: 1; // Show on hover
+				}
+
+				&:hover {
+					color: black; // Change text color to black on hover
+				}
+			}
+		}
+	}
+
+	.footer {
+		display: flex;
+		flex-wrap: wrap;
+		border: #ff1515 1px solid;
+		width: 100%;
+
+		a {
+			width: 50%;
+			margin-top: 5px;
+			font-family: var(--font-whyte);
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+}

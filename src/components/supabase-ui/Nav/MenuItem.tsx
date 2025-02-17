@@ -25,23 +25,23 @@ const MenuItem = React.forwardRef<
 			hoverColor = "foreground",
 			...props
 		},
-		ref
+		ref,
 	) => {
 		return (
 			<Link
 				href={href}
 				ref={ref}
 				className={cn(
-					"group/menu-item flex items-center text-foreground-light text-sm hover:text-foreground select-none gap-3 rounded-md p-2 leading-none no-underline outline-none focus-visible:ring-2 focus-visible:ring-foreground-lighter focus-visible:text-foreground",
+					"group/menu-item flex select-none items-center gap-3 rounded-md p-2 text-sm leading-none text-foreground-light no-underline outline-none hover:text-foreground focus-visible:text-foreground focus-visible:ring-2 focus-visible:ring-foreground-lighter",
 					description && "items-center",
-					className
+					className,
 				)}
 				{...props}
 			>
 				{children ?? (
 					<>
 						{icon && (
-							<div className="shrink-0 bg-surface-200 min-w-10 w-10 h-10 flex items-center justify-center rounded-lg">
+							<div className="flex h-10 w-10 min-w-10 shrink-0 items-center justify-center rounded-lg bg-surface-200">
 								<svg
 									className="h-5 w-5 group-hover/menu-item:text-foreground group-focus-visible/menu-item:text-foreground"
 									xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,8 @@ const MenuItem = React.forwardRef<
 								<p
 									className={cn(
 										"leading-snug text-foreground",
-										hoverColor === "brand" && "group-hover/menu-item:text-brand"
+										hoverColor === "brand" &&
+											"group-hover/menu-item:text-brand",
 									)}
 								>
 									{title}
@@ -72,12 +73,12 @@ const MenuItem = React.forwardRef<
 								{hasChevron && (
 									<ChevronRight
 										strokeWidth={2}
-										className="w-3 text-foreground transition-all will-change-transform -translate-x-1 opacity-0 group-hover/menu-item:translate-x-0 group-hover/menu-item:opacity-100"
+										className="w-3 -translate-x-1 text-foreground opacity-0 transition-all will-change-transform group-hover/menu-item:translate-x-0 group-hover/menu-item:opacity-100"
 									/>
 								)}
 							</div>
 							{description && (
-								<p className="line-clamp-1 -mb-1 leading-relaxed text-foreground-lighter group-hover/menu-item:text-foreground-light group-focus-visible/menu-item:text-foreground-light">
+								<p className="-mb-1 line-clamp-1 leading-relaxed text-foreground-lighter group-hover/menu-item:text-foreground-light group-focus-visible/menu-item:text-foreground-light">
 									{description}
 								</p>
 							)}
@@ -86,7 +87,7 @@ const MenuItem = React.forwardRef<
 				)}
 			</Link>
 		)
-	}
+	},
 )
 
 MenuItem.displayName = "MenuItem"

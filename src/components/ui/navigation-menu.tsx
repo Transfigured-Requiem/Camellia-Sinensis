@@ -55,7 +55,7 @@ const NavigationMenuTrigger = React.forwardRef<
 	>
 		{children}{" "}
 		<ArrowDownRight
-			className="relative top-[1px] ml-1 h-4 w-4 transition duration-200 group-data-[state=open]:-rotate-90 group-data-[state=open]:text-brand"
+			className="relative top-[0px] ml-1 h-5 w-5 text-brand-red transition duration-200 group-data-[state=open]:-rotate-90 group-data-[state=open]:text-brand-red"
 			aria-hidden="true"
 		/>
 	</NavigationMenuPrimitive.Trigger>

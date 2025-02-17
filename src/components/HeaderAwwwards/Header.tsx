@@ -1,5 +1,7 @@
 "use client"
+import { AnimatePresence } from "framer-motion"
 import { useState } from "react"
+import Nav from "./Nav"
 
 export default function HeaderMenu() {
 	const [isActive, setIsActive] = useState(false)
@@ -29,6 +31,7 @@ export default function HeaderMenu() {
 					/>
 				</div>
 			</div>
+			<AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
 		</>
 	)
 }

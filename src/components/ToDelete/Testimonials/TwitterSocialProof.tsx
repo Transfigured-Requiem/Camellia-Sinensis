@@ -5,7 +5,7 @@ import { buttonVariants, Button } from "@/components/ui/button"
 // import { Button, IconMessageCircle } from "ui" // Button Big Problemo Amigo
 import Tweets from "@/data/tweets/tweets.json"
 import Link from "next/link"
-import { TweetCard } from "@/components/Main/Testimonials/TweetCard"
+import { TweetCard } from "@/components/ToDelete/Testimonials/TweetCard"
 import HeadingCentered from "@/shared/HeadingCentered"
 import { ArrowDown, ArrowRight, ChevronDown } from "lucide-react"
 

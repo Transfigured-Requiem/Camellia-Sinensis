@@ -13,7 +13,7 @@ import {
 } from "@/components/Main/Home/FeaturesSection"
 import SurveyTypeSelection from "@/components/Main/Home/OptionSelection"
 import BentoGrid from "@/components/Main/Sections/bento-grid/BentoGrid"
-import TwitterSocialSection from "@/components/Main/Testimonials/TwitterSocialSelection"
+import TwitterSocialSection from "@/components/ToDelete/Testimonials/TwitterSocialSelection"
 import StickyScrollSection from "@/components/Main/Sections/scroll-section/StickyScrollSection"
 
 import { FAQ } from "@/components/Main/Sections/faq/FAQ"
@@ -32,6 +32,13 @@ import { TextParallex } from "@/components/Main/Parallex/TextParallex"
 import NameParallex from "@/components/Main/Parallex/NameParallex"
 import { AnimatePresence } from "framer-motion"
 import Preloader from "@/components/Preloader/Preloader"
+import KPRSideMenu from "@/components/Header/KPRSideMenu"
+import ShuffleText from "@/components/Header/ShuffleText"
+import Header from "@/components/SideMenu/Header"
+import { Carousel } from "@/components/Main/Carousel/Carousel"
+import TimelineNavbar from "@/components/Main/Navbar/TimelineNavbar"
+import { Clock } from "@/shared/TimeDisplay"
+import { SkillsTextLoop } from "@/components/Main/Carousel/TextLoop"
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true)
@@ -68,16 +75,38 @@ export default function Home() {
 			<AnimatePresence mode="wait">
 				{isLoading && <Preloader />}
 			</AnimatePresence>
-			{/* <HeroGsap /> */}
-			<KPRHome />
-			<NameParallex />
 
+			<TimelineNavbar />
+
+			{/* <div className="h-24"></div> */}
+			{/* <KPRHome /> */}
 			<Hero />
-			<div className="custom-div"></div>
+
+			<Carousel />
+			{/* <NameParallex /> */}
+
+			{/* <KPRSideMenu /> */}
+			<div
+				style={{
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "center",
+					height: "100vh",
+					fontSize: "148px",
+				}}
+			>
+				<span className="font-whyte font-black">hold'My</span>
+			</div>
+
+			<TimelineNavbar />
+
+			{/* <Hero /> */}
+			{/* <Header /> */}
+			{/* <div className="custom-div"></div> */}
 
 			<TextParallex />
-			<HeroSectionTwoCols />
-			<Footer />
+			{/* <HeroSectionTwoCols /> */}
+			{/* <Footer /> */}
 		</div>
 	)
 }

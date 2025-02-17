@@ -6,8 +6,6 @@ export const AfterEffectsLogo = ({
 	fill?: string
 }) => (
 	<svg
-		width="800px"
-		height="800px"
 		viewBox="0 0 32 32"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
@@ -36,9 +34,8 @@ export const IllustratorLogo = ({
 	fill?: string
 }) => (
 	<svg
-		width="800px"
-		height="800px"
 		viewBox="0 0 32 32"
+		className={className}
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 	>
@@ -65,9 +62,8 @@ export const LightroomLogo = ({
 	fill?: string
 }) => (
 	<svg
-		width="800px"
-		height="800px"
 		viewBox="0 0 32 32"
+		className={className}
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 	>
@@ -94,9 +90,8 @@ export const PremiereProLogo = ({
 	fill?: string
 }) => (
 	<svg
-		width="800px"
-		height="800px"
 		viewBox="0 0 32 32"
+		className={className}
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 	>
@@ -123,9 +118,8 @@ export const PhotoshopLogo = ({
 	fill?: string
 }) => (
 	<svg
-		width="800px"
-		height="800px"
 		viewBox="0 0 32 32"
+		className={className}
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
 	>
@@ -152,8 +146,6 @@ export const BlenderLogo = ({
 	fill?: string
 }) => (
 	<svg
-		width="800px"
-		height="800px"
 		viewBox="0 -24 256 256"
 		// version="1.1"
 		xmlns="http://www.w3.org/2000/svg"

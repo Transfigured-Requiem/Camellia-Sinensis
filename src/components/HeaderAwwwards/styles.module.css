@@ -1,0 +1,47 @@
+.button {
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	margin: 20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	/* background-color: #455ce9; */
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.burger {
+	position: relative;
+	width: 100%;
+}
+
+.burgerLine {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 40%;
+	height: 1px;
+	background-color: white;
+	transform: translate(-50%, -50%);
+	transition: transform 0.3s;
+}
+
+.burgerLineTop {
+	transform: translate(-50%, calc(-50% - 5px));
+}
+
+.burgerLineBottom {
+	transform: translate(-50%, calc(-50% + 5px));
+}
+
+.burgerActive .burgerLineTop {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burgerActive .burgerLineBottom {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
