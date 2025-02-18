@@ -39,6 +39,8 @@ import { Carousel } from "@/components/Main/Carousel/Carousel"
 import TimelineNavbar from "@/components/Main/Navbar/TimelineNavbar"
 import { Clock } from "@/shared/TimeDisplay"
 import { SkillsTextLoop } from "@/components/Main/Carousel/TextLoop"
+import { TextEffect } from "@/shared/TextEffect"
+import { TextShimmer } from "@/shared/TextShimmer"
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true)
@@ -89,6 +91,7 @@ export default function Home() {
 			<div
 				style={{
 					display: "flex",
+					flexDirection: "column",
 					justifyContent: "center",
 					alignItems: "center",
 					height: "100vh",
@@ -96,6 +99,20 @@ export default function Home() {
 				}}
 			>
 				<span className="font-whyte font-black">hold'My</span>
+				<TextEffect
+					className="border border-red-400 text-lg font-bold"
+					shimmerDuration={3}
+					per="char"
+					delay={5.5}
+				>
+					+7 years of experience with industry standard software
+				</TextEffect>
+				<TextShimmer
+					className="border border-red-400 text-lg font-bold"
+					duration={4}
+				>
+					+7 years of experience with industry standard software
+				</TextShimmer>
 			</div>
 
 			<TimelineNavbar />

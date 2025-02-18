@@ -30,7 +30,7 @@ export function FloatingNames() {
 				타하
 			</span>
 			<span
-				className={`absolute left-[75%] top-1/4 z-10 -translate-x-1/2 -translate-y-1/2 transform text-5xl transition-colors duration-1000 ${
+				className={`absolute left-[80%] top-[30%] z-10 -translate-x-1/2 -translate-y-1/2 transform text-5xl transition-colors duration-1000 ${
 					activeIndex === 2 ? "text-brand-red" : "text-white/20"
 				}`}
 			>
@@ -51,7 +51,7 @@ export function FloatingNames() {
 				طه
 			</span>
 			<span
-				className={`absolute left-1/2 top-[80%] z-10 -translate-x-1/2 -translate-y-1/2 transform text-5xl transition-colors duration-1000 ${
+				className={`absolute left-1/2 top-[70%] z-10 -translate-x-1/2 -translate-y-1/2 transform text-5xl transition-colors duration-1000 ${
 					activeIndex === 5 ? "text-brand-red" : "text-white/20"
 				}`}
 			>

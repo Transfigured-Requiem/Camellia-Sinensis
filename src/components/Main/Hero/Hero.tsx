@@ -22,6 +22,8 @@ import { BorderBeam } from "@/shared/BorderBeam"
 import { Clock } from "@/shared/TimeDisplay"
 import { SkillsTextLoop } from "../Carousel/TextLoop"
 import { FloatingNames } from "./FloatingNames"
+import { TextEffect } from "@/shared/TextEffect"
+import { TextShimmer } from "@/shared/TextShimmer"
 
 function Hero() {
 	const [preloaderFinished, setPreloaderFinished] = useState(false)
@@ -31,9 +33,22 @@ function Hero() {
 		const timeout = setTimeout(() => setPreloaderFinished(true), 4000) // Adjust the time as needed
 		return () => clearTimeout(timeout)
 	}, [])
+
+	const [showTextEffect, setShowTextEffect] = useState(true)
+
+	useEffect(() => {
+		// Hide TextEffect and show TextShimmer after 6 seconds
+		const timer = setTimeout(() => {
+			setShowTextEffect(false)
+		}, 8000) // 6000 milliseconds = 6 seconds
+
+		// Cleanup the timer to avoid memory leaks
+		return () => clearTimeout(timer)
+	}, [])
+
 	return (
 		<div className="pt-16">
-			<div className="font-dirty -mt-20 flex justify-center overflow-hidden pt-6 text-[28rem] font-semibold text-amber-50">
+			<div className="font-dirty z-20 -mt-20 flex justify-center overflow-hidden pt-6 text-[28rem] font-semibold text-amber-50">
 				<div className="z-20">
 					<StaggeredTextReveal
 						delay={1000}
@@ -49,10 +64,37 @@ function Hero() {
 				<FloatingNames />
 			</div>
 
-			{/* <div className="font-whyte flex items-center justify-center text-3xl font-bold uppercase text-brand-red">
-				Video & Photo Editor <Asterisk className="text-brand" /> +7 years of exp{" "}
-				<Asterisk className="text-brand" /> Artist{" "}
-			</div> */}
+			<div className="font-whyte text-md -mt-24 flex items-center justify-center pb-14 font-bold uppercase text-white/25">
+				<span className="pr-2 text-brand-red">
+					{" "}
+					<TextEffect per="word" preset="slide" delay={5}>
+						&ldquo;
+					</TextEffect>
+				</span>
+
+				<TextEffect
+					className="m-0 border-red-400 p-0 text-lg font-bold"
+					shimmerDuration={3}
+					per="char"
+					delay={5.5}
+				>
+					+7 years of experience with industry standard software
+				</TextEffect>
+				{/* {showTextEffect ? () : (
+					<TextShimmer
+						className="border-red-400 text-lg font-bold"
+						duration={4}
+					>
+						+7 years of experience with industry standard software
+					</TextShimmer>
+				)} */}
+
+				<span className="pl-2 text-brand-red">
+					<TextEffect per="word" preset="slide" delay={7}>
+						&rdquo;
+					</TextEffect>
+				</span>
+			</div>
 			{/* <div className="flex items-center justify-center">
 				<Image src={Timeline} alt="dsda" />
 			</div> */}
@@ -65,13 +107,23 @@ function Hero() {
 				</div> */}
 
 			{/* Logos on the right */}
-			<div className="mx-auto -mt-12 mb-24 flex w-[500px] items-center justify-center rounded-full border border-white/5 py-2 backdrop-blur-lg dark:bg-dot-white/[0.7]">
-				<SvgReveal />
-				<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+			<div className="relative mx-auto my-auto -mt-12 mb-24 flex w-[500px] items-center justify-center rounded-full border border-white/5 py-2 backdrop-blur-lg dark:bg-grid-small-red-500/[0.5]">
+				{/* Outer div with border */}
+				<div className="absolute inset-0 rounded-full border-2 border-white/10"></div>
+
+				{/* SVG Reveal Component */}
+				<div className="relative z-20">
+					<SvgReveal />
+				</div>
+
+				{/* Mask Div */}
+				<div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
+				{/* Border Beam */}
 				<BorderBeam
 					delay={10}
 					duration={8}
-					size={150}
+					size={100}
 					className="from-transparent via-brand-red to-transparent"
 				/>
 			</div>
