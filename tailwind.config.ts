@@ -159,6 +159,23 @@ const config = {
 						opacity: "0",
 					},
 				},
+				"levitate": {
+					"0%": {
+						transform: "translateY(0)",
+					},
+					"30%": {
+						transform: "translateY(-10px)",
+					},
+					"50%": {
+						transform: "translateY(4px)",
+					},
+					"70%": {
+						transform: "translateY(-15px)",
+					},
+					"100%": {
+						transform: "translateY(0)",
+					},
+				},
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
@@ -173,6 +190,7 @@ const config = {
 				"ripple":
 					"ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
 				"rippling": "rippling var(--duration) ease-out",
+				"levitate": "levitate 5s ease infinite",
 			},
 		},
 	},

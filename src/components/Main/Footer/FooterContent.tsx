@@ -3,6 +3,8 @@
 import ShuffleText from "@/components/Header/ShuffleText"
 import React from "react"
 
+import { getCurrentYear } from "@/lib/year"
+
 export default function Content() {
 	return (
 		<div className="flex h-full w-full flex-col justify-between overflow-y-hidden bg-[hsl(240,34%,9%)] px-12 py-8">
@@ -26,7 +28,7 @@ const Section2 = () => {
 			<h1 className="font-aktura mt-10 text-[20vw] leading-[0.8] text-white">
 				Taha<span className="text-brand">.</span>
 			</h1>
-			<p>©copyright</p>
+			<p>&#169; {getCurrentYear()} All rights reserved.</p>
 		</div>
 	)
 }

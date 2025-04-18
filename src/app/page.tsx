@@ -41,6 +41,9 @@ import { Clock } from "@/shared/TimeDisplay"
 import { SkillsTextLoop } from "@/components/Main/Carousel/TextLoop"
 import { TextEffect } from "@/shared/TextEffect"
 import { TextShimmer } from "@/shared/TextShimmer"
+import { VideoCarousel } from "@/components/Main/Showcase/VideoCarousel"
+import NameScroll from "@/components/SideMenu/NameScroll"
+import FAQSection from "@/components/Main/FAQ/FAQ"
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true)
@@ -74,9 +77,9 @@ export default function Home() {
 	}, [])
 	return (
 		<div className="min-h-screen">
-			<AnimatePresence mode="wait">
+			{/* <AnimatePresence mode="wait">
 				{isLoading && <Preloader />}
-			</AnimatePresence>
+			</AnimatePresence> */}
 
 			<TimelineNavbar />
 
@@ -114,6 +117,9 @@ export default function Home() {
 					+7 years of experience with industry standard software
 				</TextShimmer>
 			</div>
+			<VideoCarousel />
+			<NameScroll />
+			<FAQSection />
 
 			<TimelineNavbar />
 

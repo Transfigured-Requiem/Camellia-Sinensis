@@ -13,7 +13,7 @@ export function FloatingNames() {
 	}, [])
 
 	return (
-		<div className="absolute z-10 h-screen w-screen">
+		<div className="absolute z-10 h-screen w-screen animate-[levitate_16s_ease_infinite] font-bold">
 			{/* Quark names positioned relative to the div */}
 			<span
 				className={`absolute left-1/2 top-[20%] z-10 -translate-x-1/2 -translate-y-1/4 transform text-5xl transition-colors duration-1000 ${

@@ -48,21 +48,38 @@ function Hero() {
 
 	return (
 		<div className="pt-16">
-			<div className="font-dirty z-20 -mt-20 flex justify-center overflow-hidden pt-6 text-[28rem] font-semibold text-amber-50">
+			<div className="font-aktura -mt-14 flex w-full items-center justify-center text-[28rem]">
+				{/* <h1 className="font-aktura text-[28rem] text-brand">.</h1> */}
 				<div className="z-20">
 					<StaggeredTextReveal
 						delay={1000}
 						inView={true}
 						preloaderFinished={preloaderFinished}
 					>
-						<span className="font-aktura">Taha</span>
-						<span className="text-brand-red">.</span>
+						<span className="pr-4 text-amber-50">Taha</span>
+						<span className="pr-4 text-brand-red">.</span>
 					</StaggeredTextReveal>
 					<Ripple />
 				</div>
 				{/* Floating names positioned relative to the div */}
 				<FloatingNames />
 			</div>
+			{/* <div className="font-aktura z-20 -mt-20 flex justify-center pt-6 text-[28rem] font-semibold text-brand-red">
+				<div className="z-20">
+					Taha.
+					<StaggeredTextReveal
+						delay={1000}
+						inView={true}
+						preloaderFinished={preloaderFinished}
+					>
+						<span className="font-aktura text-amber-50">Ta.ha</span>
+						<span className="font-aktura text-[20rem]">.</span>
+					</StaggeredTextReveal>
+					<Ripple />
+				</div>
+				Floating names positioned relative to the div
+				<FloatingNames />
+			</div> */}
 
 			<div className="font-whyte text-md -mt-24 flex items-center justify-center pb-14 font-bold uppercase text-white/25">
 				<span className="pr-2 text-brand-red">
@@ -107,25 +124,26 @@ function Hero() {
 				</div> */}
 
 			{/* Logos on the right */}
-			<div className="relative mx-auto my-auto -mt-12 mb-24 flex w-[500px] items-center justify-center rounded-full border border-white/5 py-2 backdrop-blur-lg dark:bg-grid-small-red-500/[0.5]">
+			<div className="relative mx-auto my-auto -mt-12 mb-24 flex w-[520px] items-center justify-center rounded-full py-2 backdrop-blur-lg dark:bg-grid-small-red-500/[0.5]">
 				{/* Outer div with border */}
-				<div className="absolute inset-0 rounded-full border-2 border-white/10"></div>
+				<div className="absolute inset-0 rounded-full border-2 border-white/0"></div>
 
 				{/* SVG Reveal Component */}
-				<div className="relative z-20">
+				<div className="relative -z-20">
 					<SvgReveal />
 				</div>
 
-				{/* Mask Div */}
-				<div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-
 				{/* Border Beam */}
-				<BorderBeam
-					delay={10}
-					duration={8}
-					size={100}
-					className="from-transparent via-brand-red to-transparent"
-				/>
+				<div className="absolute inset-0 z-10 overflow-hidden rounded-full">
+					<BorderBeam
+						delay={10}
+						duration={8}
+						size={120}
+						className="from-transparent via-brand-red to-transparent"
+					/>
+				</div>
+				{/* Mask Div */}
+				<div className="pointer-events-none absolute inset-1 -z-10 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 			</div>
 			<Clock />
 			<SkillsTextLoop />

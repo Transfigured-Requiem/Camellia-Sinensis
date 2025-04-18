@@ -83,7 +83,8 @@ const StaggeredTextReveal = ({
 					style={{
 						display: "inline-block",
 						overflow: "hidden",
-						verticalAlign: "bottom",
+						verticalAlign: "text-bottom", // Adjust vertical alignment
+						lineHeight: "1.2", // Adjust line height
 					}}
 				>
 					<span
@@ -107,7 +108,8 @@ const StaggeredTextReveal = ({
 				style={{
 					display: "inline-block",
 					overflow: "hidden",
-					verticalAlign: "bottom",
+					verticalAlign: "text-bottom", // Adjust vertical alignment
+					lineHeight: "1.2", // Adjust line height
 				}}
 			>
 				{cloneElement(child, {

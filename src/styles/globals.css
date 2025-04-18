@@ -168,6 +168,9 @@
 	filter: grayscale(0%) brightness(100%);
 }
 
+.horizontal-text {
+	writing-mode: horizontal-tb;
+}
 /***** The important stuff *****/
 .underline {
 	position: relative;
